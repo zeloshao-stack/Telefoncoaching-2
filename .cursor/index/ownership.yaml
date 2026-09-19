@@ -1,0 +1,33 @@
+# Role ownership — candidate modules, not exclusive locks
+version: 1
+roles:
+  A00:
+    owns: [".cursor/team/", ".cursor/index/", ".cursor/decisions/", ".cursor/agents/"]
+  A01:
+    owns: ["docs/wissen-architektur.md", "src/role-engine/types.ts", "lib/openai-realtime.ts"]
+  A02:
+    owns: ["docs/module.md", "docs/projektbaum.md", "docs/vorgehen.md", "README.md"]
+  A03:
+    owns: ["app/page.tsx", "app/sitzung/", "components/training/ConversationView.tsx", "components/training/VoiceOrb.tsx", "components/training/MicPrompt.tsx"]
+  A04:
+    owns: ["components/training/", "app/"]
+  A05:
+    owns: ["lib/db.ts", "lib/sessions.ts", "lib/session-types.ts", "app/api/"]
+  A06:
+    owns: ["components/training/liveCall.ts", "components/training/bargeIn.ts", "lib/openai-realtime.ts", "lib/whisper.ts", "lib/tts.ts", "lib/live-text.ts"]
+  A07:
+    owns: ["src/role-engine/persona-prompt.ts", "src/role-engine/openaiAdapter.ts", "src/role-engine/roleEngine.ts", "lib/llm.ts"]
+  A08:
+    owns: ["lib/evaluation.ts", "src/role-engine/rubricAnchors.ts", "src/role-engine/mockEvaluator.ts", "lib/practice-loop.ts"]
+  A09:
+    owns: ["src/role-engine/__tests__/", "lib/__tests__/", "data/Telefoncoaching-Testfaelle.json"]
+  A10:
+    owns: ["package.json", "next.config.ts"]
+  A11:
+    owns: [".env.example"]
+  A12:
+    owns: ["lib/openai-realtime.ts"]
+  A13:
+    owns: ["src/role-engine/characters.ts", "src/role-engine/persona.ts", "src/role-engine/affect.ts", "src/role-engine/hangup.ts", "src/role-engine/disclosure.ts", "src/role-engine/stateReducer.ts"]
+  A14:
+    owns: ["src/role-engine/voice.ts", "src/role-engine/delivery.ts", "src/role-engine/vocalChannel.ts", "lib/voices.ts"]

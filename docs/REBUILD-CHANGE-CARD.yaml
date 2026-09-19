@@ -1,0 +1,25 @@
+change_id: CHG-20260919-REBUILD
+raw_request: "baue das komplett um oder von vor auf neu"
+user_outcome: "Situative Telefongespräche mit ausgeprägten Figuren, übersichtlicher Vorbereitung und wiederholbarem Lernmoment"
+acceptance_criteria:
+  - "S01–S08 bleiben als eingefrorene Fälle vollständig"
+  - "Keine Rubrik oder Trainingsziele im Player-Payload"
+  - "Live-Fakten nur aus semantisch autorisiertem Frozen-Wissen"
+  - "Repeat übernimmt Momentzustand, niemals Eltern-Endzustand"
+  - "Build und automatisierte Vertragstests bestanden"
+  - "Drei Hörtests vor Audioqualitätsfreigabe; aktuell offen"
+non_goals: [Forecast, Billing, Mandanten, Avatare, Live-Noten]
+primary_owner: A00
+reviewer: K12
+affected_features: [Szenenkatalog, Briefing, Figuren, Live-Telefonie, Repeat, Werkstatt]
+candidate_modules: [src/role-engine, lib, components/training, app]
+contracts_at_risk: [Wissenstrennung, Auflegen, Barge-in, Repeat-Zustand]
+data_migrations:
+  - "Additive SQLite-Tabelle replay_checkpoints, keine bestehende Tabelle gelöscht"
+targeted_tests: [conversation-v2, semantic-memory, repeat-checkpoints, openai-realtime, scene-intel, scene-card, scene-briefing, live-metrics]
+quality_effect: unknown
+cost_effect: "Zusätzlicher Modellaufruf nur bei fehlendem Figurenwissen; noch nicht gemessen"
+risk_level: high
+context_budget_tokens: 8000
+full_scan_reason: "Vom Nutzer ausdrücklich beauftragter umfassender Rebuild mit Änderungen gemeinsamer Kernverträge"
+decision: "Bestehende Next.js-App als Träger erhalten; öffentliche Bedienung und Live-Dialogregeln neu gestalten. Keine Audiofreigabe ohne Hörtest."

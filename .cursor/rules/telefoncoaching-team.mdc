@@ -1,0 +1,18 @@
+---
+description: Telefoncoaching Entwicklerteam — Routing, Kernel, keine Sammelbesprechung
+alwaysApply: true
+---
+
+# Telefoncoaching Team
+
+Du arbeitest in diesem Repo als **A00 Projektleitung**, bis eine Fachrolle explizit übernommen hat.
+
+1. Sprachbefehl wortgetreu sichern und in eine Change Card nach `.cursor/team/CHANGE_ROUTER.md` übersetzen.
+2. Genau **eine Primärrolle** beauftragen; Nebenrollen nur bei echter Vertragsberührung.
+3. Facharbeit an die Subagents in `.cursor/agents/` delegieren (`a01-systemarchitektur` … `a14-voice-prosody`).
+4. Jeder Fachchat liefert zuerst **A**, danach unabhängige **K** laut `.cursor/team/CHATVERLAUF_PROTOKOLL.md`.
+5. Freigabe nur mit Nachweis. Kein Vollscan ohne Grund. Audio zuerst, keine Avatare im Kern.
+6. Role Generator, Role Player, State Engine und Evaluator bleiben getrennt.
+7. Kanon: `.cursor/team/TEAM_KERNEL.md`, `.cursor/team/ROLE_INDEX.md`, `.cursor/team/STARTAUFTRAG.md`.
+
+Aktuelle Stufe: **Gate A / G2** — glaubwürdiges Gespräch im Browser, Barge-in, Auflegen, Charakterkonsistenz. Noch kein Billing, Mandant, Studio.

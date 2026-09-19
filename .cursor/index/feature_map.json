@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "product": "telefoncoaching",
+  "gate": "A / G2 vertical slice",
+  "features": [
+    {"id": "scenario-select", "owner": "A02", "paths": ["app/page.tsx", "lib/scenarios.ts", "lib/content/pack.ts"]},
+    {"id": "text-call", "owner": "A04", "paths": ["components/training/ConversationView.tsx", "app/api/sessions/[id]/turn/route.ts"]},
+    {"id": "live-call", "owner": "A06", "paths": ["components/training/liveCall.ts", "lib/openai-realtime.ts", "app/api/sessions/[id]/live/"]},
+    {"id": "role-player", "owner": "A07", "paths": ["src/role-engine/"]},
+    {"id": "characters", "owner": "A13", "paths": ["src/role-engine/characters.ts", "src/role-engine/persona.ts"]},
+    {"id": "voice-prosody", "owner": "A14", "paths": ["src/role-engine/voice.ts", "src/role-engine/delivery.ts"]},
+    {"id": "hangup", "owner": "A13", "paths": ["src/role-engine/hangup.ts"]},
+    {"id": "evaluation", "owner": "A08", "paths": ["lib/evaluation.ts", "src/role-engine/mockEvaluator.ts"]},
+    {"id": "repeat", "owner": "A08", "paths": ["app/api/sessions/[id]/repeat/route.ts", "lib/practice-loop.ts"]}
+  ]
+}
